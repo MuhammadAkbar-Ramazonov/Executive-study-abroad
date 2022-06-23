@@ -227,14 +227,16 @@ body{
 }
 .service-section-list {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     margin: 0;
     padding-bottom: 126px;
+    padding-left: 0;
     list-style: none;
 }
 .service-section-item {
     width: 344px;
+    margin-bottom: 56px;
     padding-top: 29px;
     padding-right: 17px;
     padding-bottom: 60px;
@@ -249,10 +251,13 @@ body{
     margin-left: 47px;
 }
 
-/* .service-section-item:nth-child(4){
+.service-section-item:nth-child(4){
+    margin-bottom: 0;
     margin-right: 47px;
-} */
-
+}
+.service-section-item:nth-child(5){
+    margin-bottom: 0;
+}
 
 .service-section-item-image {
     margin-bottom: 30px;
