@@ -29,8 +29,6 @@ body{
     height: 52px;
     
 }
-.header-nav {
-}
 .header-list {
     display: flex;
     justify-content: space-between;
@@ -75,9 +73,6 @@ body{
     justify-content: space-between;
     align-items: center;
 }
-.hero-section-inner-wrapper {
-    
-}
 .hero-section-h1 {
     font-weight: 900;
     font-size: 56px;
@@ -102,7 +97,12 @@ body{
     background: #717cff;
     border-radius: 11px; 
 }
+
+
 .hero-section-link-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 22px;
     line-height: 40px;
     text-align: center;
@@ -112,6 +112,16 @@ body{
     padding-bottom: 12px;
     padding-left: 34px;
     color: #FFFFFF;
+}
+.hero-section-link-text::after{
+    display: block;
+    width: 26px;
+    height: 26px;
+    margin-left: 29px;
+    background-image: url("../kartinki/learnmore.svg");
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    content: "";
 }
 .site-next {
     width: 30px;
@@ -126,8 +136,6 @@ body{
 }
 
 
-.hero-section-item {
-}
 .hero-section-item:nth-child(2){
     margin-right: 20px;
     margin-left: 23px;
@@ -246,6 +254,57 @@ body{
     border-radius: 15px;
 }
 
+.service-section-item::before{
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 30px;
+    background-image: url("../kartinki/CareerCounselling.svg");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.universitet-item::before{
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 30px;
+    background-image: url("../kartinki/UniversityAdmissions.svg");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.visa-item::before{
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 30px;
+    background-image: url("../kartinki/VisaConsultancy.svg");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.accusantium-item::before{
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 30px;
+    background-image: url("../kartinki/Accommodation.svg");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.Pre-Departure-item::before{
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-bottom: 30px;
+    background-image: url("../kartinki/Pre-DepartureBriefing.svg");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
 .service-section-item:nth-child(2){
     margin-right: 47px;
     margin-left: 47px;
@@ -267,30 +326,42 @@ body{
     font-size: 24px;
     line-height: 37px;
     color: #37474f;
+    margin-top: 0;
+    margin-bottom: 9px;
 }
 .service-section-item-p {
     font-size: 16px;
     line-height: 28px;
     letter-spacing: 0.444444px;
-    margin-bottom: 24px;
+    margin-top: 0;
     color: #37474fb8;
 }
 .site-learn-more {
-    width: 160px;
-    height: 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 25px;
 }
 .site-learn-more-link {
+    display: flex;
+    align-items: center;
     font-weight: 700;
     font-size: 17px;
     line-height: 20px;
     text-decoration: none;
-    margin-right: 20px;
     color: #717cff;
 }
-
+.site-learn-more-link::after{
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../kartinki/learnmore.svg");
+    background-size: 24px 24px;
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+    margin-left: 20px;
+    content: "";
+}
 .news-section{
     padding-top: 102px;
     padding-bottom: 124px;
@@ -339,13 +410,37 @@ body{
     height: 224px;
     margin-bottom: 28px;
 }
+.new-section-item::before{
+    display: block;
+    width: 344px;
+    height: 224px;
+    margin-bottom: 28px;
+    background-image: url("../kartinki/Rectangle.jpg");
+    background-size: 344px 224px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.new-section-item2::before{
+    background-image: url("../kartinki/Rectangle2.jpg");
+}
+.new-section-item3::before{
+    background-image: url("../kartinki/Rectangle3.jpg");
+}
 .new-section-span {
-    width: 145px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-bottom: 17px;
     padding-left: 26px;
+}
+.new-section-span::before{
+    display: block;
+    width: 21px;
+    height: 21px;
+    margin-right: 15px;
+    background-image: url("../kartinki/kalendar.svg");
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+    content: "";
 }
 .new-section-span-image {
     width: 14px;
@@ -373,9 +468,6 @@ body{
     color: #252525;
 }
 .new-section-link-wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     width: 236px;
     height: 64px;
     margin-right: auto;
@@ -384,6 +476,8 @@ body{
     border-radius: 11px;
 }
 .new-section-link {
+    display: flex;
+    align-items: center;
     font-size: 22px;
     line-height: 40px;
     text-decoration: none;
@@ -394,8 +488,15 @@ body{
     color: #ffffff;
 }
 
-.new-section-link-image{
-    padding-right: 32px;
+.new-section-link::after{
+    display: block;
+    width: 28px;
+    height: 26px;
+    margin-left: 36px;
+    background-image: url("../kartinki/learnmore.svg");
+    background-size: 28px 26px;
+    background-repeat: no-repeat;
+    content: "";
 }
 
 
@@ -434,6 +535,28 @@ body{
     padding-top: 30px;
     padding-left: 31px;
 }
+.upcoming-section-item-wrapper::before{
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-right: 19px;
+    margin-bottom: 29px;
+    background-image: url("../kartinki/23dec.svg");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.Federation-item-wrapper::before{
+    display: block;
+    width: 76px;
+    height: 76px;
+    margin-right: 19px;
+    margin-bottom: 29px;
+    background-image: url("../kartinki/17oct.svg");
+    background-size: 76px 76px;
+    background-repeat: no-repeat;
+    content: "";
+}
 .upcoming-section-item-image {
     width: 76px;
     height: 76px;
@@ -455,7 +578,7 @@ body{
     line-height: 28px;
     margin-top: 0;
     margin-right: 0;
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     color: #37474fb8;
 }
 .upcoming-section-item-inner-wrapper {
@@ -465,7 +588,7 @@ body{
     padding-bottom: 31px;
 }
 .upcoming-section-learn-more{
-    width: 160px;
+    margin-top: 0;
     padding-bottom: 0;
     padding-left: 31px;
 }
@@ -492,6 +615,17 @@ body{
     width: 20px;
     height: 20px;
 }
+
+.upcoming-section-wrapper-time::before{
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-image: url("../kartinki/clock.svg");
+    background-size: 16px 16px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
 .upcoming-section-item-wrapper-p {
     margin-top: 0;
     margin-bottom: 0;
@@ -533,6 +667,29 @@ body{
 }
 .country-section-item {
     margin-right: 46px;
+}
+.country-section-item::before{
+    display: block;
+    width: 346px;
+    height: 215px;
+    margin-bottom: 27px;
+    background-image: url("../kartinki/Australia.jpg");
+    background-size: 346px 215px;
+    background-repeat: no-repeat;
+    content: "";
+}
+.canada-item::before{
+    background-image: url("../kartinki/Canada.jpg");
+}
+.uk-item::before{
+    display: block;
+    width: 346px;
+    height: 215px;
+    margin-bottom: 27px;
+    background-image: url("../kartinki/uk.jpg");
+    background-size: 346px 215px;
+    background-repeat: no-repeat;
+    content: "";
 }
 
 .country-section-item:nth-child(3){
@@ -610,16 +767,29 @@ body{
 
 .testimonial-section-wrapper {
     display: flex;
-    align-items: center;
     margin-bottom: 30px;
+}
+.testimonial-section-wrapper::before{
+    display: block;
+    width: 62px;
+    height: 62px;
+    margin-right: 26px;
+    margin-bottom: 30px;
+    background-image: url("../kartinki/people1.jpg");
+    background-size: 62px 62px;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.people2-wrapper::before{
+background-image: url("../kartinki/people2.jpg");
 }
 .testimonial-section-wrapper-image {
     width: 62px;
     height: 62px;
     margin-right: 28px;
 }
-.testimonial-section-span {
-}
+
 .testimonial-section-span-h3 {
     font-weight: 900;
     font-size: 22px;
@@ -677,13 +847,27 @@ article{
 
 
 .site-article-inner-link{
-    margin-right: 43px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #ffffff;
     padding-top: 12px;
     padding-bottom: 12px;
     padding-left: 34px;
 }
 
-
+.site-article-inner-link::after{
+    display: block;
+    width: 28px;
+    height: 26px;
+    margin-left: 43px;
+    background-image: url("../kartinki/learnmore.svg");
+    background-size: 28px 26px;
+    background-repeat: no-repeat;
+    content: "";
+}
 
 
 footer{
